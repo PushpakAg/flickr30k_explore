@@ -22,6 +22,6 @@ annotations_flickr30k/
 └── Sentences/
 ```
 
-- Annotations contains xml files which will give us bouding box info
+- Annotations contains xml files which will give us bounding box info
 - Sentences contain the captions data in txt file
 
