@@ -3,12 +3,18 @@ import xml.etree.ElementTree as ET
 import matplotlib.pyplot as plt
 import matplotlib.patches as patches
 from PIL import Image
+import random 
 
 images_dir = "flickr30k/Images/"
 annotations_dir = "Annotations/"
 captions_dir = "Sentences/"
 
-image_id = "10002456"
+image_files = [f for f in os.listdir(images_dir) if f.endswith('.jpg')]
+if not image_files:
+    print("No images found in the directory.")
+    exit()
+
+image_id = random.choice(image_files)[:-4]
 image_path = os.path.join(images_dir, f"{image_id}.jpg")
 annotation_path = os.path.join(annotations_dir, f"{image_id}.xml")
 caption_path = os.path.join(captions_dir, f"{image_id}.txt")
