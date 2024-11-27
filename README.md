@@ -16,9 +16,12 @@ unzip annotations.zip -d ./annotations_flickr30k
 ```
 
 Structure of annotations_flickr30k
-- annotations_flickr30k
-    - Annotations
-    - Sentences
+```plaintext
+annotations_flickr30k/
+├── Annotations/
+└── Sentences/
+```
 
 - Annotations contains xml files which will give us bouding box info
 - Sentences contain the captions data in txt file
+
